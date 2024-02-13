@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-book-btn {
+    width: 200px;
+    height: 100px;
+    background-color: skyblue;
+    border: 0px solid black;
+    border-radius: 15%;
+}
+
+#book-form {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 1rem;
+    justify-content: space-between;
+    width: 400px;
+    height: 300px;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
