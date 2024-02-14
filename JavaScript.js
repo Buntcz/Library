@@ -15,7 +15,6 @@ function AddBookToLibary () {
     let newBook = new Book(title, author, pages, read)
     myLibary.push(newBook);
     render();
-    console.log(newBook)
 }
 
 function render() {

@@ -29,3 +29,49 @@ label {
     justify-content: center;
     align-items: center;
 }
+
+.Library {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.title, .author, .pages {
+    margin: 1rem;
+    font-size: 1.4rem;
+
+}
+
+.book {
+    background-color: skyblue;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 15%;
+    box-shadow: 3px 4px 3px 1px gray;
+}
+
+.removeBtn {
+    background-color: darkred;
+    border: 2px solid white;
+    border-radius: 25%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    bottom: 0.8rem;
+}
+
+.readBtn {
+    background-color: red;
+    margin: 15px;
+    border-radius: 25%;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid white;
+    position: relative;
+    bottom: 0.8rem;
+}
+
