@@ -55,15 +55,15 @@ function createBook(item) {
     bookDiv.classList.add("book");
     Library.appendChild(bookDiv);
 
-    titleDiv.textContent = item.name;
+    titleDiv.textContent ="Title:" + " " + item.name;
     titleDiv.classList.add("title");
     bookDiv.appendChild(titleDiv);
    
-    authorDiv.textContent = item.author;
+    authorDiv.textContent = "Author:" + " " + item.author;
     authorDiv.classList.add("author");
     bookDiv.appendChild(authorDiv);
 
-    pagesDiv.textContent =  item.pages;
+    pagesDiv.textContent = "Pages:" + " " + item.pages;
     pagesDiv.classList.add("pages");
     bookDiv.appendChild(pagesDiv);
 
@@ -71,9 +71,11 @@ function createBook(item) {
     bookDiv.appendChild(readBtn);
     if(item.read === false) {
         readBtn.textContent = "not read";
+        readBtn.style.backgroundColor = "red";
 
     } else if(item.read === true) {
         readBtn.textContent = "read";
+        readBtn.style.backgroundColor = "green";
     }
 
     removeBtn.textContent = "remove";
@@ -85,5 +87,13 @@ function createBook(item) {
 
       render();
     })
-
+   
+    readBtn.addEventListener('click', () => {
+        if(item.read === false) {
+        item.read = true
+    } else if (item.read === true) {
+        item.read = false;
+    }
+    render();
+    })
 }
